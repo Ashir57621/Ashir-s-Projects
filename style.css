@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(174, 133, 133);
+}
+.container {
+    max-width: 900px;
+    margin: 0;
+}
+.apply_box {
+max-width: 900px;
+padding: 20px;
+background-color: beige;
+margin-top: 100px;
+box-shadow: 5px 3px 10px;
+border-radius: 120px;
+}
+.form_container{
+display: grid;
+margin: px;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 200px; 
+}
+.form_control{
+     display: flex;
+     flex-direction: column;
+     gap: 3px;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+label{
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+input,
+select,
+textarea{
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+button{
+    background-color: red;
+    padding: 5px 5px;
+    color: rgb(218, 226, 226);
+    border-radius: 50px;
+}
+button:hover
+{background-color: rgb(147, 147, 218);
+color: blue;
+transition: 1s;
+cursor: grab;
+}
+.address_control
+{grid-column: 1 /span 2;
+}
+.address_control textarea{
+    width: 100%;
+}
+@media( max-width:460px){
+    .address_control
+{grid-column: 1 /span 2;
+}
+};
